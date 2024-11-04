@@ -1,2 +1,6 @@
-package com.Abdul.VideoStreamingApp.controllers;public class VideosControllers {
+package com.Abdul.VideoStreamingApp.controllers;
+
+public class VideosControllers
+{
+
 }
