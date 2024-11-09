@@ -1,14 +1,14 @@
 package com.Abdul.VideoStreamingApp.services;
 
 
-import com.Abdul.VideoStreamingApp.entities.Videos;
+import com.Abdul.VideoStreamingApp.entities.Video;
 import org.springframework.web.multipart.MultipartFile;
 
 public interface VideoService {
 
-    public void addVideo(Videos video, MultipartFile file);
+    public Video addVideo(Video video, MultipartFile file);
 
-    public Videos getVideoById(String videoId);
+    public Video getVideoById(String videoId);
 
-    public Videos getVideoByTitle(String title);
+    public Video getVideoByTitle(String title);
 }

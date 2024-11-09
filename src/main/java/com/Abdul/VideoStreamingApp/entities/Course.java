@@ -24,5 +24,16 @@ public class Course
     private  String title;
 
     @OneToMany(mappedBy = "course")
-    private List<Videos> list=new ArrayList<>();
+    private List<Video> list=new ArrayList<>();
+
+
+
+
+
+
+
+
+
+
+
 }
