@@ -23,8 +23,8 @@ public class VideoServiceImpl implements VideoService {
     private VideoRepository videoRepository;
 
     // Hardcoded directory paths
-    private final String DIR = "C:/videos";  // Example hardcoded directory for storing videos
-    private final String HSL_DIR = "C:/hls";  // Example hardcoded directory for HLS files
+    private final String DIR = "videos/";  // Example hardcoded directory for storing videos
+    private final String HSL_DIR = "videos_hsl/";  // Example hardcoded directory for HLS files
 
     @PostConstruct
     public void init() {
@@ -87,7 +87,8 @@ public class VideoServiceImpl implements VideoService {
 
     @Override
     public Video getVideoById(String videoId) {
-        return videoRepository.findById(videoId).orElse(null);
+        Video video = videoRepository.findById(videoId).orElseThrow(() -> new RuntimeException("Resourrce not found exception"));
+        return video;
     }
 
     @Override
