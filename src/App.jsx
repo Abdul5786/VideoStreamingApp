@@ -9,7 +9,7 @@ function App() {
     <> 
     <div className='flex flex-col items-center space-y-9 justify-center py-3'>
      <h1 className="text-4xl font font-extrabold text-gray-200">
-     welcome to video streaming app
+     Syed Video Streaming APP
     </h1>
     
      <VideoUpload/>
